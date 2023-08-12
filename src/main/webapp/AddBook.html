@@ -1,82 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Registration Form</title>
-<style>
-body {
-	font-family: Arial, sans-serif;
-	background-color: #f5f5f5;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 100vh;
-	margin: 0;
-}
-
-form {
-	background-color: #fff;
-	padding: 20px;
-	border-radius: 8px;
-	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-	width: 300px;
-}
-
-label {
-	font-weight: bold;
-	display: block;
-	margin-top: 10px;
-}
-
-input {
-	width: 100%;
-	padding: 8px;
-	margin: 5px 0;
-	border: 1px solid #ccc;
-	border-radius: 4px;
-	box-sizing: border-box;
-}
-
-input[type="submit"] {
-	background-color: #007bff;
-	color: white;
-	border: none;
-	padding: 10px 20px;
-	border-radius: 4px;
-	cursor: pointer;
-}
-
-input[type="submit"]:hover {
-	background-color: #0056b3;
-}
-</style>
-
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
 </head>
-
 <body>
-
-	<form action="addBook" method="post">
-
-		<label>Enter the ID</label> 
-		<input type="text" name="b_id"> 
-		
-		<label>Enter Name</label> 
-		<input type="text" name="b_name">
-		
-		 <label>Enter Author</label>
-		<input type="text" name="author"> 
-		
-		<label>Enter	COst</label>
-		 <input type="text" name="cost"> 
-		 
-		 <label>Enter	category</label> 
-		  <input type="text" name="category">
-		  
-
-		   <input type="submit" value="Submit">
-
-	</form>
-
+<form action="AddBook" method="post">
+	<label>Book Name</label>
+	<input type="text" name="bname"><br><br>
+	<label>Book Author</label>
+	<input type="text" name="author"><br><br>
+	<label>Book Cost</label>
+	<input type="text" name="cost"><br><br>
+	<label>Book Category</label>
+	<input type="text" name="category"><br><br>
+	<label>Book Status</label>
+	<input type="text" name="status"><br><br>
+	<input type="submit" value="Add Book">
+</form>
 </body>
-
 </html>
